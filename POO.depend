@@ -3,18 +3,24 @@
 	"Palete.h"
 	<iostream>
 
-1684740165 /home/dragos/Documents/sal/POO/include/Palete.h
+1686400434 /home/dragos/Documents/sal/POO/include/Palete.h
 	<iostream>
 
-1684740165 source:/home/dragos/Documents/sal/POO/main.cpp
+1686412804 source:/home/dragos/Documents/sal/POO/main.cpp
 	<iostream>
 	"coordonateMinge.h"
 	"Palete.h"
+	"GameMgm.h"
 
-1684740175 /home/dragos/Documents/sal/POO/include/coordonateMinge.h
+1686413254 /home/dragos/Documents/sal/POO/include/coordonateMinge.h
 	<iostream>
 
 1684740165 source:/home/dragos/Documents/sal/POO/src/coordonateMinge.cpp
 	"coordonateMinge.h"
 	<iostream>
+
+1686412804 /home/dragos/Documents/sal/POO/include/GameMgm.h
+	<iostream>
+	"coordonateMinge.h"
+	"Palete.h"
 

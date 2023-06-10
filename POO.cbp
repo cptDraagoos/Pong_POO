@@ -34,9 +34,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/GameMgm.h" />
 		<Unit filename="include/Palete.h" />
 		<Unit filename="include/coordonateMinge.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/GameMgm.cpp" />
 		<Unit filename="src/Palete.cpp" />
 		<Unit filename="src/coordonateMinge.cpp" />
 		<Extensions />
