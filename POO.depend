@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1684740165 source:/home/dragos/Documents/sal/POO/src/Palete.cpp
+	"Palete.h"
+	<iostream>
+
+1684740165 /home/dragos/Documents/sal/POO/include/Palete.h
+	<iostream>
+
+1684740165 source:/home/dragos/Documents/sal/POO/main.cpp
+	<iostream>
+	"coordonateMinge.h"
+	"Palete.h"
+
+1684740175 /home/dragos/Documents/sal/POO/include/coordonateMinge.h
+	<iostream>
+
+1684740165 source:/home/dragos/Documents/sal/POO/src/coordonateMinge.cpp
+	"coordonateMinge.h"
+	<iostream>
+
