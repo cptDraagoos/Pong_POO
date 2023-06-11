@@ -6,7 +6,7 @@
 1686400434 /home/dragos/Documents/sal/POO/include/Palete.h
 	<iostream>
 
-1686412804 source:/home/dragos/Documents/sal/POO/main.cpp
+1686479131 source:/home/dragos/Documents/sal/POO/main.cpp
 	<iostream>
 	"coordonateMinge.h"
 	"Palete.h"
@@ -24,7 +24,7 @@
 	"coordonateMinge.h"
 	"Palete.h"
 
-1686474219 source:/home/dragos/Documents/sal/POO/src/GameMgm.cpp
+1686478217 source:/home/dragos/Documents/sal/POO/src/GameMgm.cpp
 	"GameMgm.h"
 	<iostream>
 	"coordonateMinge.h"
