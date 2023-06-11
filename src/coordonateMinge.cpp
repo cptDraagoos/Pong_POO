@@ -19,9 +19,32 @@ void coordonateMinge::Reset()
     directie = STOP;
 }
 
-void coordonateMinge::SchimbaDir(Directie D)
+void coordonateMinge::SchimbaDir(int D)
 {
-    directie = D;
+    switch (D)
+    {
+    case 0:
+        directie=STOP;
+        break;
+    case 1:
+        directie=LEFT;
+        break;
+    case 2:
+        directie=UPLEFT;
+        break;
+    case 3:
+        directie=DOWNLEFT;
+        break;
+    case 4:
+        directie=RIGHT;
+        break;
+    case 5:
+        directie=UPRIGHT;
+        break;
+    case 6:
+        directie=DOWNRIGHT;
+        break;
+    }
 }
 
 void coordonateMinge::randDirectii()
@@ -64,8 +87,33 @@ int coordonateMinge::getX()
 { return x; }
 int coordonateMinge::getY()
 { return y; }
-coordonateMinge::Directie coordonateMinge::getDirect()
-{ return directie; }
+int coordonateMinge::getDirect()
+{
+    switch (directie)
+    {
+    case STOP:
+        return 0;
+        break;
+    case LEFT:
+        return 1;
+        break;
+    case UPLEFT:
+        return 2;
+        break;
+    case DOWNLEFT:
+        return 3;
+        break;
+    case RIGHT:
+        return 4;
+        break;
+    case UPRIGHT:
+        return 5;
+        break;
+    case DOWNRIGHT:
+        return 6;
+        break;
+    }
+}
 
 
 coordonateMinge::~coordonateMinge()

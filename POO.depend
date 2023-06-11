@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1684740165 source:/home/dragos/Documents/sal/POO/src/Palete.cpp
+1686472765 source:/home/dragos/Documents/sal/POO/src/Palete.cpp
 	"Palete.h"
 	<iostream>
 
@@ -12,10 +12,10 @@
 	"Palete.h"
 	"GameMgm.h"
 
-1686413254 /home/dragos/Documents/sal/POO/include/coordonateMinge.h
+1686475886 /home/dragos/Documents/sal/POO/include/coordonateMinge.h
 	<iostream>
 
-1684740165 source:/home/dragos/Documents/sal/POO/src/coordonateMinge.cpp
+1686475892 source:/home/dragos/Documents/sal/POO/src/coordonateMinge.cpp
 	"coordonateMinge.h"
 	<iostream>
 
@@ -23,4 +23,21 @@
 	<iostream>
 	"coordonateMinge.h"
 	"Palete.h"
+
+1686474219 source:/home/dragos/Documents/sal/POO/src/GameMgm.cpp
+	"GameMgm.h"
+	<iostream>
+	"coordonateMinge.h"
+	"Palete.h"
+	<time.h>
+	"conio.h"
+	<stdlib.h>
+	<unistd.h>
+
+1686408338 /home/dragos/Documents/sal/POO/include/conio.h
+	<conio.h>
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
 

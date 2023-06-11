@@ -27,3 +27,9 @@ int Palete::getX()
 
 int Palete::getY()
 { return y; }
+
+void Palete::MoveUp()
+{ y--; }
+
+void Palete::MoveDown()
+{ y++; }

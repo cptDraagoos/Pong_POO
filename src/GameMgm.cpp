@@ -4,6 +4,8 @@
 #include "Palete.h"
 #include <time.h>
 #include "conio.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -12,8 +14,8 @@ GameMgm::GameMgm(int w, int h)
 {
 	srand(time(NULL));
 	quit = false;
-	up1 = 'w', down1 = 's',
-	up2 = 'i', down2 = 'k';
+	up1 = 'w'; up2 = 'i',
+	down1 = 's'; down2 = 'k';
 	score1 = score2 = 0;
 	width = w;
 	height = h;
@@ -28,14 +30,14 @@ void GameMgm::Scor(Palete* p)
 		score1++;
 	else if (p == paleta2)
 		score2++;
-	minge->Reset();
+    minge->Reset();
 	paleta1->Reset();
 	paleta2->Reset();
 }
 
 void GameMgm::Draw()
 {
-	system("cls");
+	system("clear");
 	for (int i = 0; i < width + 2; i++)
 	{
 		cout << "#";
@@ -109,7 +111,10 @@ void GameMgm::Draw()
 	{
 		cout << "#";
 	}
+	cout<<"\nScore1:"<<score1;
+	cout<<"\nScore2:"<<score2;
 	cout << endl;
+	usleep(100000);
 }
 
 void GameMgm::Input()
@@ -137,8 +142,8 @@ void GameMgm::Input()
                 paleta1->MoveDown();
         if(ch == down2)
             if(pal2y + 4 < height)
-        if(minge->getDirect() == STOP)
                 paleta2->MoveDown();
+        if(minge->getDirect() == minge->STOP)
             minge->randDirectii();
         if(ch == 'q')
             quit = true;
@@ -154,26 +159,22 @@ void GameMgm::Logic()
     int pal1y = paleta1->getY();
     int pal2y = paleta2->getY();
 
-    for(int i =0 ; i<4;i++)
+    for(int i = 0 ; i < 4 ;i++)
     {
-        if(minx == pal1x+1)
-        {
+        if(minx == pal1x + 1)
             if(miny == pal1y + i)
-                minge->SchimbaDir((Directie)((rand() % 3) + 4));
-        }
+                minge->SchimbaDir(minge->getDirect()*(rand() % 3 ) + 5);
     }
-    for(int i =0 ; i<4;i++)
+    for(int i = 0 ; i < 4 ; i++)
     {
-        if(minx == pal2x-1)
-        {
+        if(minx == pal2x - 1)
             if(miny == pal2y + i)
-                minge->SchimbaDir((Directie)((rand() % 3) + 1));
-        }
+                minge->SchimbaDir(minge->getDirect()*(rand() % 3 ) + 1);
     }
     if(miny == height - 1)
-        minge->SchimbaDir(minge->getDirect() == DOWNRIGHT ? UPRIGHT : UPLEFT);
+        minge->SchimbaDir(minge->getDirect() == minge->DOWNRIGHT ? minge->UPRIGHT : minge->UPLEFT);
     if(miny == 0)
-        minge->SchimbaDir(minge->getDirect() == UPRIGHT ? DOWNRIGHT : DOWNLEFT);
+        minge->SchimbaDir(minge->getDirect() == minge->UPRIGHT ? minge->DOWNRIGHT : minge->DOWNLEFT);
 
     if(minx == width - 1)
         Scor(paleta1);

@@ -11,10 +11,10 @@ public:
     enum Directie { STOP = 0 , LEFT = 1, UPLEFT = 2 , DOWNLEFT = 3, RIGHT = 4, UPRIGHT = 5, DOWNRIGHT = 6 };
     coordonateMinge(int PozX, int PozY);
     void Reset();
-    void SchimbaDir(Directie D);
+    void SchimbaDir(int D);
     int getX();
     int getY();
-    Directie getDirect();
+    int getDirect();
     void randDirectii();
     void Move();
     virtual ~coordonateMinge();
